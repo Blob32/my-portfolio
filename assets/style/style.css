@@ -6,9 +6,9 @@
   padding: 0;
 }
 :root{
-  --bg: #0f0014;
+  --bg: #12002D;
   --bc: #2b0053;
-  --ac: #ff0270;
+  --ac: #FFD700;
   --txt: #eeeeee;
 }
 body{
@@ -24,11 +24,18 @@ body::-webkit-scrollbar{
 h1, h2, h3{
   font-family: Zen Dots, sans-serif;
   margin: 0.5rem 0;
+  color: var(--ac);
+  text-shadow: 0 0 1px #ffffff, 0 0 4px rgb(255 233 69 / 50%), 0 0 1px #000;
 }
 p, span, a{
   font-family: Lato, sans-serif;
   color: var(--txt);
+  margin: 0.5rem 0;
   /* text-decoration: none; */
+}
+span{
+  font-size: 0.8rem;
+  color: #d5d5d5;
 }
 
 main{
@@ -96,10 +103,8 @@ main{
   border-radius: 12px;
 }
 .div4 .desk .project:hover{
-  box-shadow:  0 0 2px 1px #ffffffd8;
-}
-.div4 .desk .project p{
-  margin: 5px 0;
+  box-shadow:  0 0 4px 0 #ffffffd8;
+  background-color: var(--bc);
 }
 .div5 {
   grid-row: span 3 / span 3;
@@ -114,7 +119,4 @@ main{
 .profil img{
   width: 200px;
   border-radius: 50%;
-}
-.profil{
-  text-align: center;
 }
